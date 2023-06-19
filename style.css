@@ -1,0 +1,164 @@
+/* CSS Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.main-container {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.audio {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 80%; /* Menggunakan unit persen (%) agar responsif */
+  max-width: 320px; /* Batasi lebar maksimum jika diperlukan */
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 10px auto 0; /* Decreased margin-top to 10px */
+}
+
+.video-container video {
+  max-width: 100%; /* Set maksimum lebar video sesuai dengan kontainer */
+  height: auto; /* Biarkan tinggi video mengikuti perbandingan aspek */
+}
+
+.gambar {
+  width: 80%;
+  max-width: 800px; /* Batasi lebar maksimum gambar jika diperlukan */
+  height: auto;
+  display: block;
+  margin: 10px auto 0; /* Decreased margin-top to 10px */
+}
+
+.survey-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #428bca;
+  color: white;
+  text-decoration: none;
+}
+
+.survey-button:hover {
+  background-color: #3071a9;
+}
+
+
+/* Styling for Form Page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  border: 1px solid black;
+  padding: 10px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.form-container {
+  border: 2px solid black;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+.card h3 {
+  text-align: center;
+}
+.card form {
+  margin-top: 20px;
+}
+.card .form-group {
+  margin-bottom: 15px;
+}
+.card label {
+  display: block;
+}
+.card input[type="radio"] {
+  margin-right: 5px;
+}
+.card input[type="radio"] + label {
+  margin-left: 5px;
+}
+.card input[type="text"],
+.card input[type="date"],
+.card textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.card select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.card .radio-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.card button {
+  background-color: #428bca;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.card button:hover {
+  background-color: #428bca;
+}

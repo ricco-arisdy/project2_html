@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="card">
+            <div class="header">
+            </div>
+
+            <!-- Form Pendaftaran -->
+            <div class="form-container">
+                <h2>Form Pendaftaran</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" placeholder="Nama Anda" id="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="ID">ID Motor</label>
+                        <input type="text" placeholder="ID Motor" id="ID">
+                    </div>
+                    <div class="form-group">
+                        <p>Jenis Mesin:</p>
+                        <div class="radio-group">
+                            <input type="radio" name="JenisMesin" id="150cc" value="150cc">
+                            <label for="150cc">150cc</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="JenisMesin" id="250cc" value="250cc">
+                            <label for="250cc">250cc</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="JenisMesin" id="400cc" value="400cc">
+                            <label for="400cc">400cc</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="JenisMesin" id="500cc++" value="500cc++">
+                            <label for="500cc++">500cc++</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown">Jenis Kelamin:</label>
+                        <select id="dropdown">
+                            <option value="-">-</option>
+                            <option value="L">L</option>
+                            <option value="P">P</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal:</label>
+                        <input type="date" id="tanggal">
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <textarea placeholder="Tulis alamatmu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="kirimData()">Kirim</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
